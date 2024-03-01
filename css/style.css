@@ -1,0 +1,87 @@
+@font-face
+{
+	font-family: JosefinSans;
+	src: url('../font/G-fonts/JosefinSans-Regular.ttf');
+}
+*
+{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(rgb(0 0 0 / 28%),rgb(0 0 0 / 46%)),url(../image/bg-image.png);
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+	font-family: JosefinSans;
+}
+.wrapper
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	border: 0px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px 2px #000000a8;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	overflow: hidden;
+}
+.wrapper header.header-txt
+{
+	color: #404040;
+	padding: 10px;
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+	border-bottom:1px solid #909090;
+}
+.wrapper .opt
+{
+	margin: 10px 0 0 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: auto;
+	border: 0px solid #bbb;
+}
+.wrapper .opt .option
+{
+	background-image: url(../image/bg-image.png);
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	width: 300px;
+    border: 0px solid #b92a2a;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.wrapper .opt .option:hover
+{
+	box-shadow: 0 2px 5px 0 #0a0a0aba;
+}
+.wrapper .opt .option:last-child
+{
+	background-image: url(../image/rec.jpg);
+}
+.wrapper .opt .option .nam
+{
+	position: absolute;
+	bottom: 20px;
+	font-size: 25px;
+	color: #fff;
+	width: 300px;
+	text-align: center;
+	text-shadow: 0px 2px 5px #000000;
+	border: 0px solid #000;
+}

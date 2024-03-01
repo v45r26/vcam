@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VCAM - Home</title>
+	<link rel="stylesheet" type="text/css" href="../../css/rec_cam_style.css">
+	<link rel="stylesheet" href="../../font/fontawesome-free-5.13.1-web/css/all.css">
+</head>
+<body>
+
+<div class="top_nav">
+	<a href="javascript:void(0)" class="nav_link active">Rec Screen</a>
+	<a href="../cam/rec_cam.html" class="nav_link">Rec Camera</a>
+</div>
+
+<div class="wrapper">
+	<div class="input_output_box">
+		
+		<video class="output_screen" id="output_screen" autoplay muted poster="../../image/postr.png"></video>
+		
+		<div class="controls_box">
+			
+			<div class="start_cam_box">
+				<div class="str_cam_form">
+					<label>
+						<!-- <input type="checkbox" id="echoCancellation" class="chbx_input">&nbsp;&nbsp; -->
+						<input type="checkbox" id="echoCancellation" title="echo" />Echo Cancellation
+					</label>
+
+					<label>
+						<!-- <input type="checkbox" id="noiceSuppression" class="chbx_input">&nbsp;&nbsp; -->
+
+						<input type="checkbox" id="noiseSuppression" title="noiseSuppression" />Noice Suppression
+					</label>
+				</div>
+				<button class="start_cam_btn" id="start">Start Screen</button>
+			</div>
+
+			<div class="recorder_control_box">
+				<button class="controls_btn_rec" id="rec_start" title="Start Recording">
+					<i class="fas fa-circle"></i>
+				</button>
+				<button class="controls_btn_rec" id="rec_pause" title="Stop Recording">
+					<i class="fas fa-square"></i>
+				</button>
+				<button class="controls_btn_rec" id="play_vid" title="View Recorded Video">
+					<i class="fas fa-caret-right"></i>
+				</button>			
+			</div>
+
+			<div class="download_box">
+				<form id="download_form">
+					<input type="text" id="file_name_input" class="download_file_name" placeholder="Write file Name" value="ABC" required="">
+					<button class="download_btn" id="download_vid" type="submit">
+						<i class="fas fa-download"></i>&nbsp;Download
+					</button>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<div class="errorMsg_box">
+	<span id="errorMsg"></span>
+</div>
+
+<script src="../../js/rec_scr.js"></script>
+
+</body>
+</html>
